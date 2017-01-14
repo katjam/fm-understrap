@@ -1,14 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Basic');
 
+$white: #f0f0f0;
+$yellow: #ffeaba;
+$blue: #8bdaf0;
+
 body {
-  background: #f0f0f0;
+  background: $white;
   font-family: 'Basic', sans-serif;
 }
 
-h1 {
-  font-family: 'Anton', sans-serif;
+.wrapper-navbar {
+  .navbar {
+    font-family: 'Anton', sans-serif;
+    background: $blue;
+    line-height: 1;
+    .navbar-brand {
+      font-size: 4em;
+      color: $white;
+      padding: 0 0 0 120px;
+      background: url('../images/logo.png') no-repeat;
+      span {
+        color: $yellow;
+      }
+    }
+    #main-menu {
+      font-size: 1.6em;
+    }
+  }
 }
 
-h2 {
-  font-family: 'Amatic SC';
+.btn-secondary,
+a {
+  color: darken($blue, 20);
+  &:hover {
+    color: $blue;
+  }
+  &:visited {
+    color: darken($blue, 20);
+  }
+}
+
+.btn-secondary {
+  background-color: darken($white, 5);
+}
+
+h1, h2, h3 {
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 700;
+}
+
+.home {
+  article {
+    padding: 20px 0 0 0;
+    border-bottom: solid 2px lighten($white, 5);
+  }
+}
+
+.widget {
+  text-align: center;
+  p {
+    margin-top: 20px;
+  }
+  .kindle {
+    background: url('../images/frog.png') center no-repeat;
+    padding: 100px 0 130px 0;
+  }
+}
+
+#wrapper-footer {
+  background: url('../images/border-bottom.png') repeat-x;
+  padding-top: 120px;
 }
