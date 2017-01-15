@@ -6,13 +6,14 @@ $blue: #8bdaf0;
 
 body {
   background: $white;
-  font-family: 'Basic', sans-serif;
+  font-family: Serif;
 }
 
 .wrapper-navbar {
   .navbar {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     background: $blue;
+    font-weight: 700;
     line-height: 1;
     .navbar-brand {
       font-size: 4em;
