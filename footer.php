@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-                    &copy; Fiona Mordaunt <?php echo date('Y'); ?>
+                    &copy; <?php echo date('Y'); ?> Fiona Mordaunt
                     </div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
