@@ -34,6 +34,7 @@ body {
   }
 }
 
+.wpcf7 input[type="submit"],
 .btn-secondary,
 a {
   color: darken($blue, 20);
@@ -45,8 +46,26 @@ a {
   }
 }
 
+.wpcf7 input[type="submit"],
 .btn-secondary {
   background-color: darken($white, 5);
+  border-color: darken($white, 5);
+}
+
+.wpcf7 input[type="submit"] {
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    background-color: $blue;
+    border-color: $blue;
+    color: darken($blue, 20);
+  }
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 2px solid $blue;
+  border-radius: 2px;
 }
 
 h1, h2, h3 {
