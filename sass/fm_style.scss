@@ -58,11 +58,20 @@ iframe {
   max-width: 100%;
 }
 
+.blog,
 .home {
   article {
     padding: 20px 0 0 0;
     border-bottom: solid 2px lighten($white, 5);
   }
+}
+
+.post-navigation .nav-links span {
+  padding: 0 20px;
+}
+
+.entry-content {
+  padding-top: 20px;
 }
 
 .widget {
@@ -74,9 +83,17 @@ iframe {
     background: url('../images/frog.png') center no-repeat;
     padding: 100px 0 130px 0;
   }
+  ul {
+    list-style: none;
+    text-align: left;
+    li {
+      padding: 0 0 10px 0;
+    }
+  }
 }
 
 #wrapper-footer {
-  background: url('../images/border-bottom.png') repeat-x;
+  //background: url('../images/border-bottom.png') repeat-x;
+  background: url('../images/bg-geometric.png') repeat-x;
   padding-top: 120px;
 }
