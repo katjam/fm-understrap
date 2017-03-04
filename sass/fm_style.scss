@@ -3,11 +3,18 @@
 $white: #f0f0f0;
 $yellow: #ffeaba;
 $blue: #8bdaf0;
+$text-blue: #1585a4;
 
 body {
   background: $white;
   font-family: Serif;
   text-align: justify;
+}
+
+.hide-visually {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .wrapper-navbar {
@@ -34,15 +41,26 @@ body {
   }
 }
 
+.twitter {
+  background: url('../images/social-sprite.png') #4099FF center no-repeat;
+  background-position: 2px -223px;
+  height: 35px;
+  width: 35px;
+  display: block;
+  border-radius: 10px;
+  top: 20px;
+  position: absolute;
+}
+
 .wpcf7 input[type="submit"],
 .btn-secondary,
 a {
-  color: darken($blue, 20);
+  color: $text-blue;
   &:hover {
-    color: $blue;
+    color: lighten($text-blue, 20);
   }
   &:visited {
-    color: darken($blue, 20);
+    color: $text-blue;
   }
 }
 
@@ -68,9 +86,14 @@ div.wpcf7-mail-sent-ok {
   border-radius: 2px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, #categories-2 li {
   font-family: 'Amatic SC', sans-serif;
   font-weight: 700;
+  text-align: left;
+}
+
+#categories-2 li {
+  font-size: 1.6em;
 }
 
 iframe {
@@ -100,11 +123,16 @@ iframe {
   }
   .kindle {
     background: url('../images/frog.png') center no-repeat;
-    padding: 100px 0 130px 0;
+    a {
+      display: block;
+      height: 225px;
+      width: 250px;
+    }
   }
   ul {
     list-style: none;
     text-align: left;
+    padding: 0;
     li {
       padding: 0 0 10px 0;
     }

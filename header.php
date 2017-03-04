@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-
+<div><a href="https://twitter.com/fionamordaunt" class="twitter" title="Follow Fiona on Twitter"></a></div>
 			</div><!-- .container -->
 
 		</nav><!-- .site-navigation -->
