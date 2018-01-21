@@ -112,8 +112,26 @@ iframe {
   padding: 0 20px;
 }
 
+img.size-thumbnail {
+  float: left;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  img.size-thumbnail {
+    float: none;
+  }
+  p {
+    text-align: left;
+  }
+}
+
 .entry-content {
   padding-top: 20px;
+}
+
+.entry-footer {
+  clear: both;
 }
 
 .widget {
